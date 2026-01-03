@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Delivery Express — Lago Agrio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="Imagenes/camion.png">
+  <!-- Archivo CSS externo -->
+  <link rel="stylesheet" href="estructura.css">
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">🚚 <span>Delivery Express</span></div>
+      <div class="brand-text">
+        <h1>Delivery Express</h1>
+        <p>Distribución de sánduches a minimarkets (gasolineras / licorerías) y a domicilio — Lago Agrio</p>
+      </div>
+    </div>
+  </header>
+  <!-- Contenido principal -->
+  <main class="container">
+    <section class="catalog">
+      <h2>Catálogo</h2>
+      <!-- Catálogo de productos -->
+      <div class="product-grid">
+        <!-- Producto 1 -->
+        <article class="card">
+          <img src="Imagenes/png_transparent_coca_cola_fizzy_drinks_sprite_juice_coca_cola_cola_juice_bottle_V1.jpg" alt="Sánduche Baguette">
+          <div class="card-body">
+            <h3>Sánduche Baguette + Cola</h3>
+            <div class="row">
+              <div class="price">$2.00</div>
+              <!-- Controles de cantidad -->
+              <div class="qty">
+                <button class="btn qty-minus" data-key="baguette">−</button>
+                <span id="baguette">0</span>
+                <button class="btn qty-plus"  data-key="baguette">+</button>
+              </div>
+            </div>
+            <p class="muted">Pan baguette, jamón, queso, salsas. Incluye cola.</p>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="card">
+          <img src="Imagenes/Sánduche Integral + Cola.jpg" alt="Sánduche Integral">
+          <div class="card-body">
+            <h3>Sánduche Integral + Cola</h3>
+            <div class="row">
+              <div class="price">$2.00</div>
+              <div class="qty">
+                <button class="btn qty-minus" data-key="integral">−</button>
+                <span id="integral">0</span>
+                <button class="btn qty-plus"  data-key="integral">+</button>
+              </div>
+            </div>
+            <p class="muted">Pan integral, jamón, queso, especias. Incluye cola.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Resumen del pedido -->
+    <aside class="summary">
+      <h2>Resumen del pedidos</h2>
+
+      <div class="summary-box">
+        <div class="summary-row"><span>Items</span><span id="items-count">0</span></div>
+        <div class="summary-row"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+        <div class="summary-row"><span>Recogida</span><span id="pickup-fee">$0.75</span></div>
+        <div class="summary-row"><span>Entrega</span><span id="delivery-fee">$1.00</span></div>
+        <hr />
+        <div class="summary-row total"><span>TOTAL A PAGAR</span><span id="total">$0.00</span></div>
+      </div>
+      <!-- Datos del cliente -->
+      <h3>Datos de entrega</h3>
+      <input id="cliente-nombre" type="text" placeholder="Tu nombre" />
+      <input id="cliente-direccion" type="text" placeholder="Dirección / Punto de entrega" />
+      <input id="cliente-ref" type="text" placeholder="Referencia / Observaciones (opcional)" />
+
+      <button id="send-btn" class="btn btn-primary">Enviar pedido por WhatsApp</button>
+      <p class="note">Se abrirá WhatsApp con el resumen del pedido para confirmar.</p>
+    </aside>
+  </main>
+<!-- Pie de página -->
+  <footer class="site-footer">
+    <p>Proyecto académico · Delivery Express · Lago Agrio</p>
+  </footer>
+<!-- Archivos JavaScript -->
+  <script src="celular.js"></script>
+</body>
+</html>
+
+
+
+
+
+
